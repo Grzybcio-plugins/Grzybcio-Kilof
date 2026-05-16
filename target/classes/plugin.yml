@@ -1,0 +1,25 @@
+name: GrzybcioKilof
+version: '1.0.0'
+main: pl.grzybcio.kilof.GrzybcioKilof
+api-version: '1.21'
+authors: [Grzybcio]
+description: Plugin dodający kilof 3x3
+
+commands:
+  grzybcio-kilof:
+    description: Daje specjalny kilof 3x3
+    usage: /<command> [gracz]
+    permission: grzybciokilof.give
+    permission-message: "&cNie masz uprawnień do tej komendy!"
+
+permissions:
+  grzybciokilof.give:
+    description: Pozwala na użycie komendy /grzybcio-kilof
+    default: op
+  grzybciokilof.use:
+    description: Pozwala na używanie kilofa 3x3
+    default: true
+  grzybciokilof.reload:
+    description: Pozwala przeładować konfigurację
+    default: op
+

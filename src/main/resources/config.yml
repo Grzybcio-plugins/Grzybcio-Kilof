@@ -1,0 +1,57 @@
+# ================================
+# GrzybcioKilof - Konfiguracja / Configuration
+# ================================
+
+# Nazwa kilofa (obsługuje kody kolorów HEX i standardowe)
+# Pickaxe name (supports HEX and standard color codes)
+# Format HEX: &#RRGGBB lub/or <#RRGGBB>
+# Format standardowy/Standard format: &a, &b, &c itd./etc.
+kilof-nazwa: "&#7ED4E6&lKil&#BCDECE&lof &#FAE7B5&lDusz"
+
+# Lore (opis) kilofa - każda linia to osobny wpis
+# Pickaxe lore (description) - each line is a separate entry
+kilof-lore:
+  - ""
+  - "&#AAAAAA► &#FFFFFFKopie bloki 3x3"
+  - "&#AAAAAA► &#FFFFFFSpecjalny kilof GrzybcioMC"
+  - ""
+
+# Typ kilofa / Pickaxe type
+# (NETHERITE_PICKAXE, DIAMOND_PICKAXE, IRON_PICKAXE, etc.)
+kilof-typ: NETHERITE_PICKAXE
+
+# Czy kilof ma świecić (efekt enchantmentu)
+# Should the pickaxe glow (enchantment effect)
+kilof-glow: true
+
+# Enchantmenty kilofa / Pickaxe enchantments
+# Format: ENCHANTMENT_NAME: poziom/level
+kilof-enchantmenty:
+  EFFICIENCY: 5
+  UNBREAKING: 3
+  FORTUNE: 3
+
+# Rozmiar kopania (promień od środkowego bloku)
+# Mining size (radius from the center block)
+# 1 = 3x3, 2 = 5x5, 3 = 7x7 itd./etc.
+kopanie-promien: 1
+
+# Czy wymagać uprawnienia grzybciokilof.use do używania kilofa 3x3
+# Require grzybciokilof.use permission to use the 3x3 pickaxe
+wymagaj-uprawnienia: false
+
+# Wiadomości / Messages
+wiadomosci:
+  otrzymano-kilof: "&#7ED4E6&lGrzybcio&fMC &#AAAAAA» &#FFFFFFOtrzymałeś &#7ED4E6Kilof Dusz&#FFFFFF!"
+  dano-kilof: "&#7ED4E6&lGrzybcio&fMC &#AAAAAA» &#FFFFFFDałeś &#7ED4E6Kilof Dusz &#FFFFFFgraczowi &#7ED4E6%player%&#FFFFFF!"
+  gracz-offline: "&#7ED4E6&lGrzybcio&fMC &#AAAAAA» &#FF6B6BGracz nie jest online!"
+  brak-uprawnien: "&#7ED4E6&lGrzybcio&fMC &#AAAAAA» &#FF6B6BNie masz uprawnień do tej komendy!"
+  tylko-gracz: "&#7ED4E6&lGrzybcio&fMC &#AAAAAA» &#FF6B6BTa komenda może być wykonana tylko przez gracza!"
+  przeladowano: "&#7ED4E6&lGrzybcio&fMC &#AAAAAA» &#FFFFFFKonfiguracja została przeładowana!"
+
+# Lista bloków, które NIE będą niszczone przez kilof 3x3
+# List of blocks that will NOT be destroyed by the 3x3 pickaxe
+# Kilof niszczy WSZYSTKIE bloki oprócz tych na liście poniżej
+# The pickaxe destroys ALL blocks except those on the list below
+bloki-wykluczone:
+  - BEDROCK
